@@ -39,7 +39,7 @@ NoteSchema.methods.addAuthor = function (author_id) {
     this.author = author_id 
     return this.save()
 }
-NoteSchema.methods.getUserNote = funtion(_id) {
+NoteSchema.methods.getUserNote = function(_id) {
     ArticleSchema.find({'author': _id}).then((note) => {
         return note
     })
