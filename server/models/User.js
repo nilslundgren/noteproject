@@ -10,4 +10,4 @@ let UserSchema = new mongoose.Schema(
         provider_pic: String
     }
 )
-module.exports = mongoose.model('User', UserSchama)
+module.exports = mongoose.model('User', UserSchema)
